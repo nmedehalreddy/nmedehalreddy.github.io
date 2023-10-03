@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Medehal Reddy's Nice Flower || ITIS3135 Forms</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+
+    </header>
+    <main>
+        <h2>
+            ITIS3135 Forms
+        </h2>
+       <form id="survey-form">
+
+        <label for="name" id="name-label" >Name</label>
+        <input type="text" name="name" placeholder= "Neha" required>
+        <br>
+        <label for="number" id="number-label" >Phone Number</label>
+        <input type="number" id="number" name="number" placeholder="123-456-7890" required>
+        <br>
+        <label for="email" id="email-label" >Email</label>
+        <input type="email" id="email" name="email" placeholder="nehamr@yahoo.com" required>
+        <br>
+        <p>The form contains two checkboxes.</p>
+        <input type="checkbox" class="form-check-input" id="check1" name="option1"
+        value="something" checked>
+        <label class="form-check-label" for="check1">Option 1</label>
+        <input type="checkbox" class="form-check-input" id="check1" name="option1"
+        value="something" checked>
+        <label class="form-check-label" for="check1">Option 2</label>
+        <p>Please see how to contact us</p>
+        <input type="radio" id="phone" name="fav_language" value="phone"> 
+        <label for="phone">PHONE</label><br> 
+        <input type="radio" id="email" name="fav_language" value="email">
+        <label for="email">EMAIL</label><br>
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+            <option value="Bmw">Bmw</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Audi">Audi</option>
+            <option value="Toyota">Toyota</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+       </form>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
