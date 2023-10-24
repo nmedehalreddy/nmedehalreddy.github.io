@@ -9,7 +9,7 @@ function animalHeight() {
     alert("The height of the Panda is 5 feet");
 }
 function animalSize() {
-    alert("The size of the Panda is 275 punds");
+    alert("The size of the Panda is 275 pounds");
 }
 function animalFood() {
     alert("The food the Panda eats is bamboo");
