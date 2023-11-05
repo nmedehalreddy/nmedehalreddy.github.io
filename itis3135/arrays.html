@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles/arrays.css">
+        <script src="scripts/arrays.js"></script>
+</head>
+<body>
+    <div>
+        <h2>Add Salary</h2>
+        <label>Enter Name : <input type="text" id="name" required autofocus><span id="namenull"></span></label> <br>
+        <label>Enter Salary : <input type="number" id="salary" required><span id="salarynull"></span></label><br>
+        <button onclick="addSalary()">Add Salary</button>
+    </div>
+    <hr>
+    <div>
+        <h2>Display Salary</h2>
+        <button onclick="displaySalary()">Display Salary</button>
+        <table id="result_table"></table>
+    </div>
+    <hr>
+    <div>
+        <h2>Display Result</h2>
+        <button onclick="displayResults()">Display Result</button>
+        <div id="results"></div>
+    </div>
+    <hr>
+    <div>
+        <h2>Display Employees</h2>
+        <button onclick="displayEmployees()">Display Employees In Dropdown</button><br>
+        <select id="employees"></select>
+    </div>
+</body>
+</html>
