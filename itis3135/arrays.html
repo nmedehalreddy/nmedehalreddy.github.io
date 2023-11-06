@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Neha Medehal Reddy's Nice Flower || ITIS3135 Home</title>
     <link rel="stylesheet" href="styles/arrays.css">
-        <script src="scripts/arrays.js"></script>
+    <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
+    <header>
+        <div data-include="components/header.html"></div>
+        
+    </header>
+    <main>
     <div>
         <h2>Add Salary</h2>
         <label>Enter Name : <input type="text" id="name" required autofocus><span id="namenull"></span></label> <br>
@@ -34,5 +38,11 @@
         <button onclick="displayEmployees()">Display Employees In Dropdown</button><br>
         <select id="employees"></select>
     </div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/arrays.js"></script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
