@@ -5,54 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neha Medehal Reddy's Nice Flower || BYO Intro</title>
     <link rel="stylesheet" href="styles/default.css">
+    <!-- JavaScript function declarations -->
+    <script src="scripts/survey.js"></script>
 </head>
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
         
-    </header>
-    <main>
-        <h2>
-            BYO Intro
-        </h2>
-        <p>
-            This is the content for my ITIS3135 class
-        </p>
-        <h3 id="NAMEGOESHERE"></h3>
-        <p>Please input your name here:</p>
-        <input id="name">
-        <p>Please input your feeling here:</p>
-        <input id="feeling">
-        <button type="button" onclick="myFunction()">Submit</button>
-        <p id="demo"></p>
-        <p>Please input the number</p>
-        <input id="number">
-        <button type="button" onclick="alertPolygonName()">Submit</button>
-        <p id="demo"></p>
-        <p>
-            <input type="button" value="My Animal" onclick="myAnimal()">
-         </p>
-         <p>
-            <input type="button" value="Animal Color" onclick="animalColor()">
-         </p>
-         <p>
-             <input type="button" value="Animal Height" onclick="animalHeight()">
-          </p>
-          <p>
-             <input type="button" value="Animal Size" onclick="animalSize()">
-          </p>
-          <p>
-             <input type="button" value="Animal Food" onclick="animalFood()">
-          </p>
- 
+           <main id="Byo">
+            <h3>BYO Intro Page</h3>
         
-    </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
-    <script src="scripts/HTMLInclude.min.js"></script>
-    <script src="scripts/firstscripts.js"></script>
-    <script src="scripts/alertpolygon.js"></script>
-    <script src="scripts/animal.js"></script>
-</body>
-</html>
+           
+            <form name="formByo" action="#"  onsubmit="return validateForm()" method="post">
+                <div id="error">
+                    <p></p>
+                </div>
+        
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Mascot</td>
+                        <td><input type="text" name="mascot" id="mascot"></td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td><input type="file" name="image" id="image"></td>
+                    </tr>
+                    <tr>
+                        <td>Image Caption</td>
+                        <td><input type="text" name="ImageCaption" id="ImageCaption"></td>
+                    </tr>
+                    <tr>
+                        <td>Personal Background</td>
+                        <td><input type="text" name="personalBackground" id="personalBackground"></td>
+                    </tr>
+                    <tr>
+                        <td>Professional Background</td>
+                        <td><input type="text" name="professionalBackground" id="professionalBackground"></td>
+                    </tr>
+                    <tr>
+                        <td>Academic Background</td>
+                        <td><input type="text" name="academicBackground" id="academicBackground"></td>
+                    </tr>
+                    <tr>
+                        <td>Background in Web Development</td>
+                        <td><input type="text" name="backgroundInWeb" id="backgroundInWeb"></td>
+                    </tr>
+                    <tr>
+                        <td>Primary Computer Platform</td>
+                        <td><input type="text" name="primaryComputerPlatform" id="primaryComputerPlatform"></td>
+                    </tr>
+                    <tr>
+                        <td>Courses currently taking</td>
+                        <td>
+                            <input type="text" name="courseTaken" id="courseTaken"><input type="button" value="Add Course" id="myButton" onclick="return addMore()">
+                            <div id="container">
+            
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Funny thing?</td>
+                        <td><input type="text" name="funnyThing" id="funnyThing"></td>
+                    </tr>           
+                    <tr>
+                        <td>Anything else?</td>
+                        <td><input type="text" name="anythingElse" id="anythingElse"></td>
+                    </tr>    
+                    <tr>
+                        <td>Agree to terms</td>
+                        <td><input type="checkbox" name="terms" id="terms" >"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</td>
+                    </tr>    
+                </table>
+          
+                <br>
+                <input type="submit" value="Submit" id="submit" >
+                <input type="reset" value="Reset" id="reset">
+              </form>
+        
+           </main>
+           <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        </body>
+        </html>
