@@ -6,15 +6,19 @@
     <title>Neha Medehal Reddy's Nice Flower || BYO Intro</title>
     <link rel="stylesheet" href="styles/default.css">
     <!-- JavaScript function declarations -->
-    <script src="scripts/survey.js"></script>
+    
 </head>
 <body>
+    <header>
+        <div data-include="components/header.html"></div>
+        
+    </header>
         
            <main id="Byo">
             <h3>BYO Intro Page</h3>
         
            
-            <form name="formByo" action="#"  onsubmit="return validateForm()" method="post">
+            <form name="formByo" action="#"  id="formData" onsubmit="return validateForm()" method="post">
                 <div id="error">
                     <p></p>
                 </div>
@@ -22,44 +26,44 @@
                 <table>
                     <tr>
                         <td>Name</td>
-                        <td><input type="text" name="name" id="name"></td>
+                        <td><input type="text" name="name" id="name" value="Neha"></td> 
                     </tr>
                     <tr>
                         <td>Mascot</td>
-                        <td><input type="text" name="mascot" id="mascot"></td>
+                        <td><input type="text" name="mascot" id="mascot" value="Cavaliers"></td>
                     </tr>
                     <tr>
                         <td>Image</td>
-                        <td><input type="file" name="image" id="image"></td>
+                        <td><input type="file" name="image" id="image" value="My file"></td> 
                     </tr>
                     <tr>
                         <td>Image Caption</td>
-                        <td><input type="text" name="ImageCaption" id="ImageCaption"></td>
+                        <td><input type="text" name="imageCaption" id="imageCaption" value="My photo"></td>
                     </tr>
                     <tr>
                         <td>Personal Background</td>
-                        <td><input type="text" name="personalBackground" id="personalBackground"></td>
+                        <td><input type="text" name="personalBackground" id="personalBackground" value="I was born in California."></td>
                     </tr>
                     <tr>
                         <td>Professional Background</td>
-                        <td><input type="text" name="professionalBackground" id="professionalBackground"></td>
+                        <td><input type="text" name="professionalBackground" id="professionalBackground" value="I am learning to code"></td>
                     </tr>
                     <tr>
                         <td>Academic Background</td>
-                        <td><input type="text" name="academicBackground" id="academicBackground"></td>
+                        <td><input type="text" name="academicBackground" id="academicBackground" value="I am studying in UNC Charlotte"></td>
                     </tr>
                     <tr>
                         <td>Background in Web Development</td>
-                        <td><input type="text" name="backgroundInWeb" id="backgroundInWeb"></td>
+                        <td><input type="text" name="backgroundInWeb" id="backgroundInWeb" value="Java, Javascript, SQL"></td>
                     </tr>
                     <tr>
                         <td>Primary Computer Platform</td>
-                        <td><input type="text" name="primaryComputerPlatform" id="primaryComputerPlatform"></td>
+                        <td><input type="text" name="primaryComputerPlatform" id="primaryComputerPlatform" value="Windows"></td>
                     </tr>
                     <tr>
                         <td>Courses currently taking</td>
                         <td>
-                            <input type="text" name="courseTaken" id="courseTaken"><input type="button" value="Add Course" id="myButton" onclick="return addMore()">
+                            <input type="text" name="courseTaken" id="courseTaken" value="ITIS 3135"><input type="button" value="Add Course" id="myButton" onclick="return addMore()">
                             <div id="container">
             
                             </div>
@@ -67,26 +71,31 @@
                     </tr>
                     <tr>
                         <td>Funny thing?</td>
-                        <td><input type="text" name="funnyThing" id="funnyThing"></td>
+                        <td><input type="text" name="funnyThing" id="funnyThing" value="Laugh at mom jokes"></td>
                     </tr>           
                     <tr>
                         <td>Anything else?</td>
-                        <td><input type="text" name="anythingElse" id="anythingElse"></td>
+                        <td><input type="text" name="anythingElse" id="anythingElse" value="Nothing to say"></td>
                     </tr>    
-                    <tr>
                         <td>Agree to terms</td>
                         <td><input type="checkbox" name="terms" id="terms" >"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</td>
                     </tr>    
                 </table>
           
                 <br>
-                <input type="submit" value="Submit" id="submit" >
+                <button type="button" onclick="loadPage()">Submit</button>
                 <input type="reset" value="Reset" id="reset">
               </form>
+
+              <div id="output" class="container"></div>
+
+
         
            </main>
            <footer>
             <div data-include="components/footer.html"></div>
         </footer>
-        </body>
+        <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/survey.js"></script>    
+    </body>
         </html>

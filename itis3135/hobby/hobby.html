@@ -6,29 +6,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My hobby website</title>
     <!-- Attatch Style sheet -->
+    <style>
+        body{
+            background-color: lightcoral;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
+        p {
+            color: darkgreen;
+        }
+    </style>
     </head>
 
 <body>
     <header>
         <h1>My hobby website</h1>
         <nav>
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Hobbies">Hobbies</a>
-            <a href="#Guide">Guide</a>
+
+            <button onclick="showDiv('Home')"> HOME </button>  
+            <button onclick="showDiv('About')"> About </button>
+            <button onclick="showDiv('Hobbies')"> Hobbies </button>
+            <button onclick="showDiv('Guide')"> Guide </button>
+
         </nav>
         
     </header>
     <main>
 
 
-        <div id="Home">
+        <div id="Home" class="content" >
 
             <h2>Home</h2>
             <p>Hi, I am Neha, this is my hobby website </p>
         </div>
 
-        <div id="About">
+        <div id="About" class="content" style="display:none;">
 
             <h2>About</h2>
             <h3>
@@ -42,18 +57,17 @@
             
             </div>
 
-        <div id="Hobbies">
+        <div id="Hobbies" class="content" style="display:none;">
 
             <h2>My Hobbies</h2>
             <h3>
                 <p>Workouts - I do regular Workouts to keep healthy</p>
                 <p></p>
-                <p></p>
             <img src="images/image1.jpeg" width="300" height="300">
             </h3>
         </div>
 
-        <div id="Guide">
+        <div id="Guide" class="content" style="display:none;">
 
             <h2>Guide</h2>
             <p>Hobbies are a great way to unwind while expanding your mind, learning a new skill, and having fun</p>
@@ -68,5 +82,19 @@
         <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a>
     </footer>
 
-<script></script>
+<script>
+    function showDiv(divId) {
+        // Hide all content divs
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+    
+        // Show the selected div
+        var selectedDiv = document.getElementById(divId);
+        if (selectedDiv) {
+            selectedDiv.style.display = 'block';
+        }
+    }
+</script>
 </body>

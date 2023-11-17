@@ -21,7 +21,7 @@ function validateForm() {
        return false;
     } 
 
-    if ( document.forms["formByo"]["ImageCaption"].value == "") {
+    if ( document.forms["formByo"]["imageCaption"].value == "") {
       alert("ImageCaption must be filled out");
     return false;
     }
@@ -77,4 +77,57 @@ function validateForm() {
 
     }
   }
+
+    //function name to load 
+    function loadPage() {
+      validateForm();
+      var name = document.getElementById("name").value;
+      var mascot = document.getElementById("mascot").value;
+      var image = document.getElementById("image").files[0];
+      var imageURL = URL.createObjectURL(image);
+      /*
+      
+      */
+      var imageCaption = document.getElementById("imageCaption").value;
+      var personalBackground = document.getElementById("personalBackground").value;
+      var professionalBackground = document.getElementById("professionalBackground").value;
+      var academicBackground = document.getElementById("academicBackground").value;
+      var backgroundInWeb = document.getElementById("backgroundInWeb").value;
+      var primaryComputerPlatform = document.getElementById("primaryComputerPlatform").value;
+      var courseTaken = document.getElementById("courseTaken").value;
+      var funnyThing = document.getElementById("funnyThing").value;
+      var anythingElse = document.getElementById("anythingElse").value;
+      var terms = document.getElementById("terms").value;
+
+      document.getElementById("formData").remove();
+
+      document.getElementById("output").innerHTML = "<p> <h3>name:  " + name + "</h3></p>" +
+                                                    "<p><h3> mascot:  " + mascot + "</h3></p>" +
+                                                    "<img src=\"" + imageURL + "\" >" +
+                                                    "<figcaption> Image Caption:  " + imageCaption + "</figcaption>" +
+                                                    "<ul class='myUL'>" + "<li ><b> Personal Background - </b>" + personalBackground + "</li>" +
+                                                     "<li> <b> Professional Background - </b>" + professionalBackground + "</li>" +
+                                                     "<li> <b> Academic Background - </b>" + academicBackground + "</li>" +
+                                                     "<li> <b> Background In Web Developemnt - </b>" + backgroundInWeb + "</li>" +
+                                                     "<li> <b> Primary Computer Platform - </b>" + primaryComputerPlatform + "</li>" +
+                                                     "<li> <b> Courses currently taking - </b>" + courseTaken + "</li>" +
+                                                     "<li> <b> Funny Thing - </b>" + funnyThing + "</li>" +
+                                                     "<li> <b> Anything Else - </b>" + anythingElse + "</li>" +
+                                                     "<li> <b> Checkmark that you agree w/ text - </b>" + terms + "</li>" +
+                                                     "</ul>" 
+
+
+
+
+
+
+
+                                                    
+
+
+
+
+
+    }
+  
 
