@@ -18,6 +18,7 @@ p {
 	font-weight:lighter !important;
 	line-height:22px !important;
 	text-align: justify;
+	align-items: center;
 }
 
 .text-center {
@@ -34,11 +35,10 @@ p {
 	padding: 14px 16px;
   }
   a {
+	align-items: center;
     color: aquamarine;
     text-decoration: none;
 }
-  
-
 
 
 /** slide css */

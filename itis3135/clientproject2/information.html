@@ -23,6 +23,10 @@
         <h2>Information Page</h2>
         <P>The hotel is about one and half hour drive from internatonal airport. The hotel is 30 minutes drive from ISKCON temple and bangalore palace.</P>
         <p>Customers can reach hotel by bus, taxi and train.</p>
+        <p>
+            <div id="map"></div> 
+        </p>
+
     </main>
     <footer>
         <p>Designed by <a href="reddysdesigncorp.com/">Reddy's Design Corp </a>&copy; 2023 </p>
@@ -35,5 +39,46 @@
   <a href="https://jigsaw.w3.org/css-validator/check/referer">
     <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
     </footer>
+    <style>
+
+
+        /* Set the size of the div element 
+          that contains the map */ 
+          #map { 
+              height: 400px; 
+              width: 100%; 
+          } 
+          
+          h2 { 
+              color: #308d46; 
+          } 
+      </style>
+      <!--Add a script by google -->
+      <script src= 
+  "https://maps.googleapis.com/maps/api/js?key=AIzaSyDNroZtQqwvlw0SVBfaiPyJf8WdRFcF5_w&callback=initMap&libraries=&v=weekly" 
+          async> 
+      </script> 
+  
+      <script> 
+  
+          // Initialize and add the map 
+          function initMap() { 
+  
+              // The location of Geeksforgeeks office 
+              const gfg_office = { 
+                  lat: 12.868580516514305, 
+                  lng: 77.57645816703565 
+              }; 
+  
+              // Create the map, centered at gfg_office 
+              const map = new google.maps.Map( 
+                      document.getElementById("map"), { 
+  
+                  // Set the zoom of the map 
+                  zoom: 20.56, 
+                  center: gfg_office, 
+              }); 
+          } 
+      </script> 
 </body>
 </html>
