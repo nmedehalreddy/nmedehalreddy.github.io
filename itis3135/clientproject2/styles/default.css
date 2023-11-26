@@ -40,6 +40,10 @@ p {
     text-decoration: none;
 }
 
+ .center {
+	align-items: center;
+  }
+
 
 /** slide css */
 
