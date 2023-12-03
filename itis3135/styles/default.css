@@ -35,6 +35,10 @@ li {
     padding: 2px;
     margin-bottom: 3px;
 }
+.reviewImage {
+    max-width: 400px;
+    max-height: 400px;
+  }
 @media ( min-width : 576px) {
     body {
         background-color: darkgreen;
