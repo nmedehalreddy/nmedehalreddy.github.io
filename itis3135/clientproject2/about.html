@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRB Hotels Abous Us</title>
-    <link rel="stylesheet" href="styles/default.css">
-    <script  src="scripts.js"></script>
-</head>
-<body>
-    <header>
-        <h1>MRB Hotels</h1>
-        <div class="topnav">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MRB Hotels</title>
+      <link rel="stylesheet" href="styles/default.css">
+      <link rel="stylesheet" href="styles/slick.css">
+      <script src="scripts/jquery.min.js"></script>
+      <script src="scripts/jquery-ui.js"></script>
+      <script src="scripts/slick.min.js"></script>
+      <script>
+         $(document).ready(function() {
+         	$('.demo').slick({
+         		arrows : true,
+         		centerMode : true,
+         		centerPadding : '500px'
+         	});
+         });
+      </script>
+   </head>
+   <body>
+      <header>
+         <h1>MRB Hotels</h1>
+         <div class="topnav">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="information.html">Information</a>
-                <a href="design.html">Design</a>
-                <a href="contract.html">Contract</a>
+               <a href="index.html">Home</a> <a href="about.html">About</a> <a
+                  href="information.html">Information</a> <a href="design.html">Design</a>
+               <a href="contract.html">Contract</a>
             </nav>
+         </div>
+      </header>
+      <main>
+         <h2>About Page</h2>
+         <P>MRB Hotels launched in 2016 and is situated in a privileged
+            location at Bengaluru, Karnataka, India. Targeted mainly for the
+            business and cultural traveller, the location enjoys proximity to
+            financial districts and leisure destinations. Each year we are
+            providing more and more ammenties and each year we added more
+            amentities to satisfy all the customers.
+         </P>
+         <p>This hotel serves all kinds of customers including families and
+            bussiness people.
+         </p>
+         <p>The hotel was built in 2016 and the hotel is running
+            successfully since 7 years.
+         </p>
+         <h2 class="slide-center">Hotel Photo Gallery</h2>
+         <div class="slider demo center">
+            <div style="width: 100%; text-align: center;">
+               <img alt="room1" src="images/room1.jpg"
+                  style="width: 575px; height: 500px">
             </div>
-    </header>
-    <main>
-        <h2>About Page</h2>
-        <P>MRB Hotels launched in 2016 and is situated in a privileged location at Bengaluru, Karnataka, India. Targeted mainly for the business and cultural traveller, the location enjoys proximity to financial districts and leisure destinations. Each year we are providing more and more ammenties and each year we added more amentities to satisfy all the customers.</P>
-        <p>This hotel serves all kinds of customers including families and bussiness people.</p>
-        <p>The hotel was built in 2016 and the hotel is running successfully since 7 years.</p>
-
-        <h2 class="slide-center">Hotel Photo Gallery</h2>
-        <div class="slide-content slide-display-container">
-            <img class="mySlides" src="images/room1.jpg" style="width: 100%">
-            <img class="mySlides" src="images/room2.jpg" style="width:100%">
-            <img class="mySlides" src="images/room3.jpg" style="width:100%">
-            <img class="mySlides" src="images/room4.jpg" style="width:100%">
-          
-            <button class="slide-button slide-black slide-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="slide-button slide-black slide-display-right" onclick="plusDivs(1)">&#10095;</button>
-          </div>        
-        
-        
-    </main>
-    <footer>
-        <p style="text-align: center;">Designed by <a href="reddysdesigncorp.com/">Reddy's Design Corp </a>&copy; 2023 </p>
-        <p style="text-align: center;"><a href="https://www.freecodecamp.org/certification/nmedehalreddy/responsive-web-design">Certified in responsive web design </a>&copy; 2023 </p>
-        <p style="text-align: center;"><a href="https://www.freecodecamp.org/certification/nmedehalreddy/javascript-algorithms-and-data-structures">Certified in javascript-algorithms-and-data-structures </a>&copy; 2023 </p>
-        <div style="text-align: center;">
-          <a  class="center" href="https://validator.slide.org/check?uri=referer">
-            <img class="center" src="images/button-valid-html5.gif" width="88" height="31" style="align-items: center;" alt="Link to HTML validator"></a>
-
-          <a  class="center" href="https://jigsaw.slide.org/css-validator/check/referer">
-            <img class="center" src="images/button-valid-css.gif" width="88" height="31" style="align-items: center;"  alt="Link to CSS validator"></a>
-        </div>
-    </footer>
-<script>
-
-        /* slide script */
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-    </script>
-</body>
+            <div style="width: 100%; text-align: center;">
+               <img alt="room2" src="images/room2.jpg"
+                  style="width: 575px; height: 500px">
+            </div>
+            <div style="width: 100%; text-align: center;">
+               <img alt="room3" src="images/room3.jpg"
+                  style="width: 575px; height: 500px">
+            </div>
+            <div style="width: 100%; text-align: center;">
+               <img alt="room4" src="images/room4.jpg"
+                  style="width: 575px; height: 500px">
+            </div>
+         </div>
+      </main>
+      <footer>
+         <p style="text-align: center;">
+            Designed by <a href="reddysdesigncorp.com/">Reddy's Design Corp </a>&copy;
+            2023
+         </p>
+         <p style="text-align: center;">
+            <a
+               href="https://www.freecodecamp.org/certification/nmedehalreddy/responsive-web-design">Certified
+            in responsive web design </a>&copy; 2023
+         </p>
+         <p style="text-align: center;">
+            <a
+               href="https://www.freecodecamp.org/certification/nmedehalreddy/javascript-algorithms-and-data-structures">Certified
+            in javascript-algorithms-and-data-structures </a>&copy; 2023
+         </p>
+         <div style="text-align: center;">
+            <a class="center"
+               href="https://validator.slide.org/check?uri=referer"> <img
+               class="center" src="images/button-valid-html5.gif" width="88"
+               height="31" style="align-items: center;"
+               alt="Link to HTML validator"></a> <a class="center"
+               href="https://jigsaw.slide.org/css-validator/check/referer"> <img
+               class="center" src="images/button-valid-css.gif" width="88"
+               height="31" style="align-items: center;" alt="Link to CSS validator"></a>
+         </div>
+      </footer>
+   </body>
 </html>

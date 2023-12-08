@@ -1,163 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRB Hotels</title>
-    <link rel="stylesheet" href="styles/default.css">
-    <script  src="scripts.js"></script>
-    <style>
-        .mySlides {display:none;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MRB Hotels</title>
+<link rel="stylesheet" href="styles/default.css">
+<script src="scripts.js"></script>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<style type="text/css">
+ .ui-tabs .ui-tabs-panel {
+	background-color: green !important;
+} 
+</style>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$("#designTabs").tabs({
+			active : 0,
+			direction: 'horizontal',
+			 width: '100%'
+		});
+	});
+</script>
 </head>
 <body>
-    <header>
-        <h1>MRB Hotels</h1>
-        <div class="topnav">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="information.html">Information</a>
-                <a href="design.html">Design</a>
-                <a href="contract.html">Contract</a>
-            </nav>
-            </div>
-    </header>
-    <main>
-        <h2>Design Page</h2>
-   
-        <div class="tab-navigation">
-            <div class="container">
-              <ul class="nav nav-tabs">
-                <li class="active"><a class="group" href="#about_us" data-toggle="tab" aria-expanded="true"><span class="text">Standard Room</span></a></li>
-                <li class=""><a class="group" href="#before_you_go" data-toggle="tab" aria-expanded="false"><span class="text">Deluxe Room</span></a></li>
-                <li class="last"><a class="group" href="#map_directions" data-toggle="tab" aria-expanded="false"><span class="text">Suites</span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-content"> 
-            <!-- Tab About us -->
-            <div class="tab-pane fade" id="about_us">
-              <div class="panel">
-                <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                  <h2>Bangalore Lifestyle Rooms  . . . Innovative &amp; Inspired</h2>
-                  <p>Every room and suite is airy and well-ventilated, thoughtfully designed to keep you healthy and fresh. Full-length French windows provide plenty of brightness and great view. Wooden parquet floor keeps you warm and cozy during chilly winter months.<br>
-                  </p>
-                </div>
-                <div class="col-lg-12 no-padding">
-                  <div class="row">
-                    <div class="col-lg-5 col-md-5 animation fadeInLeft animated" data-animation="fadeInLeft">
-                      <div class="panel"> <img src="images/room3.jpg" width="300" height="400" class="img-responsive" alt="Executive Room at Bangalore Hotel"> </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7 animation fadeInRight animated" data-animation="fadeInRight">
-                      <h2>Standard Room</h2>
-                      <p>Simple yet stylish, our standard rooms are perfect for solo travellers. The room is equipped with a comfortable orthopaedic bed, wide screen television and several amenities.<br>
-                        <br>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <hr class="animation fadeInLeft animated" data-animation="fadeInLeft">
-                <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                  <div class="col-lg-4 col-md-4 animation fadeInLeft animated" data-animation="fadeInLeft">
-                    <h3>Features</h3>
-                    <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                      <ul>
-                        <li>Toiletries</li>
-                        <li>Housekeeping</li>
-                        <li>Satellite TV</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Tab Before you go-->
-            <div class="tab-pane fade" id="before_you_go">
-              <div class="panel">
-                <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                  <h2>Bangalore Lifestyle Rooms  . . . Innovative &amp; Inspired</h2>
-                  <p>Every room and suite is airy and well-ventilated, thoughtfully designed to keep you healthy and fresh. Full-length French windows provide plenty of brightness and great view. Wooden parquet floor keeps you warm and cozy during chilly winter months.<br>
-                  </p>
-                </div>
-                <div class="col-lg-12 no-padding">
-                  <div class="row">
-                    <div class="col-lg-5 col-md-5 animation fadeInLeft animated" data-animation="fadeInLeft">
-                      <div class="panel"> <img src="images/room1.jpg" width="300" height="400" class="img-responsive" alt="Executive Room at Bangalore Hotel"> </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7 animation fadeInRight animated" data-animation="fadeInRight">
-                      <h2>Deluxe Room</h2>
-                      <p>A more luxurious accommodation, our Deluxe rooms are finished with some elegant furniture and décor. The room comes with an additional work desk and sitting area. <br>
-                        <br>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <hr class="animation fadeInLeft animated" data-animation="fadeInLeft">
-                <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                  <div class="col-lg-4 col-md-4 animation fadeInLeft animated" data-animation="fadeInLeft">
-                    <h3>Features</h3>
-                    <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                      <ul>
-                        <li>Bottled Water</li>
-                        <li>Satellite TV</li>
-                        <li>Plug Converters</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Tab Map/Directions-->
-            <div class="tab-pane fade active in" id="map_directions">
-              <div class="panel">
-                <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                  <h2>Bangalore Lifestyle Rooms  . . . Innovative &amp; Inspired</h2>
-                  <p>Every room and suite is airy and well-ventilated, thoughtfully designed to keep you healthy and fresh. Full-length French windows provide plenty of brightness and great view. Wooden parquet floor keeps you warm and cozy during chilly winter months.<br>
-                  </p>
-                </div>
-                <div class="col-lg-12 no-padding">
-                  <div class="row">
-                    <div class="col-lg-5 col-md-5 animation fadeInLeft animated" data-animation="fadeInLeft">
-                      <div class="panel"> <img src="images/room1.jpg " width="300" height="400" class="img-responsive" alt="Executive Room at Bangalore Hotel"> </div>
-                    </div>
-                    <div class="col-lg-7 col-md-7 animation fadeInRight animated" data-animation="fadeInRight">
-                      <h2>Suite Room</h2>
-                      <p>Built for those who love to live king size, our signature suites are designed eloquently to suit a family. In addition to the regulars, the room also includes a dressing area, study tables and a dining space.<br>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <hr class="animation fadeInLeft animated" data-animation="fadeInLeft">
-                <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                  <div class="col-lg-4 col-md-4 animation fadeInLeft animated" data-animation="fadeInLeft">
-                    <h3>Features</h3>
-                    <div class="col-lg-12 col-md-12 animation fadeInLeft animated" data-animation="fadeInLeft">
-                      <ul>
-                        <li>Hairdryer</li>
-                        <li>Bathrobes, Slippers and Toiletries</li>
-                        <li>Separate Showers</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <p>We provide all ammenities to customers.</p>
-    </main>
-    <footer>
-      <p style="text-align: center;">Designed by <a href="reddysdesigncorp.com/">Reddy's Design Corp </a>&copy; 2023 </p>
-      <p style="text-align: center;"><a href="https://www.freecodecamp.org/certification/nmedehalreddy/responsive-web-design">Certified in responsive web design </a>&copy; 2023 </p>
-      <p style="text-align: center;"><a href="https://www.freecodecamp.org/certification/nmedehalreddy/javascript-algorithms-and-data-structures">Certified in javascript-algorithms-and-data-structures </a>&copy; 2023 </p>
-      <div style="text-align: center;">
-        <a  class="center" href="https://validator.slide.org/check?uri=referer">
-          <img class="center" src="images/button-valid-html5.gif" width="88" height="31" style="align-items: center;" alt="Link to HTML validator"></a>
+	<header>
+		<h1>MRB Hotels</h1>
+		<div class="topnav">
+			<nav>
+				<a href="index.html">Home</a> <a href="about.html">About</a> <a
+					href="information.html">Information</a> <a href="design.html">Design</a>
+				<a href="contract.html">Contract</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<h2>Design Page</h2>
+		<p></p>
 
-        <a  class="center" href="https://jigsaw.slide.org/css-validator/check/referer">
-          <img class="center" src="images/button-valid-css.gif" width="88" height="31" style="align-items: center;"  alt="Link to CSS validator"></a>
-      </div>
-  </footer>
+		<div class="col-lg-12 col-md-12 animation fadeInLeft animated"
+			data-animation="fadeInLeft">
+			<h2>Bangalore Lifestyle Rooms . . . Innovative &amp; Inspired</h2>
+			<p>
+				Every room and suite is airy and well-ventilated, thoughtfully
+				designed to keep you healthy and fresh. Full-length French windows
+				provide plenty of brightness and great view. Wooden parquet floor
+				keeps you warm and cozy during chilly winter months.<br>
+			</p>
+		</div>
+
+		<div id="designTabs">
+			<ul>
+				<li><a href="#standardRoom">Standard Room</a></li>
+				<li><a href="#deluxRoom">Delux Room</a></li>
+				<li><a href="#suites">Suites</a></li>
+			</ul>
+
+			<div id="standardRoom">
+				<p>
+					<img src="images/room3.jpg" width="600" height="300"
+						class="img-responsive" alt="Executive Room at Bangalore Hotel">
+				</p>
+				<h2>Standard Room</h2>
+				<p>
+					Simple yet stylish, our standard rooms are perfect for solo
+					travellers. The room is equipped with a comfortable orthopaedic
+					bed, wide screen television and several amenities.<br> <br>
+				</p>
+
+			</div>
+
+			<div id="deluxRoom">
+				<p>
+					<img src="images/room1.jpg" width="600" height="300"
+						class="img-responsive" alt="Executive Room at Bangalore Hotel">
+				</p>
+				<h2>Deluxe Room</h2>
+				<p>
+					A more luxurious accommodation, our Deluxe rooms are finished with
+					some elegant furniture and décor. The room comes with an additional
+					work desk and sitting area. <br> <br>
+				</p>
+				<p>
+				<ul>
+					<li>Bottled Water</li>
+					<li>Satellite TV</li>
+					<li>Plug Converters</li>
+				</ul>
+			</div>
+
+			<div id="suites">
+				<p>
+					<img src="images/room2.jpg" width="600" height="300"
+						class="img-responsive" alt="Executive Room at Bangalore Hotel">
+				</p>
+				<h2>Suite Room</h2>
+				<p>
+					Built for those who love to live king size, our signature suites
+					are designed eloquently to suit a family. In addition to the
+					regulars, the room also includes a dressing area, study tables and
+					a dining space.<br>
+				</p>
+				<p>
+				<ul>
+					<li>Hairdryer</li>
+					<li>Bathrobes, Slippers and Toiletries</li>
+					<li>Separate Showers</li>
+				</ul>
+			</div>
+		</div>
+
+		<p>We provide all ammenities to customers.</p>
+	</main>
+	<footer>
+		<p style="text-align: center;">
+			Designed by <a href="reddysdesigncorp.com/">Reddy's Design Corp </a>&copy;
+			2023
+		</p>
+		<p style="text-align: center;">
+			<a
+				href="https://www.freecodecamp.org/certification/nmedehalreddy/responsive-web-design">Certified
+				in responsive web design </a>&copy; 2023
+		</p>
+		<p style="text-align: center;">
+			<a
+				href="https://www.freecodecamp.org/certification/nmedehalreddy/javascript-algorithms-and-data-structures">Certified
+				in javascript-algorithms-and-data-structures </a>&copy; 2023
+		</p>
+		<div style="text-align: center;">
+			<a class="center"
+				href="https://validator.slide.org/check?uri=referer"> <img
+				class="center" src="images/button-valid-html5.gif" width="88"
+				height="31" style="align-items: center;"
+				alt="Link to HTML validator">
+			</a> <a class="center"
+				href="https://jigsaw.slide.org/css-validator/check/referer"> <img
+				class="center" src="images/button-valid-css.gif" width="88"
+				height="31" style="align-items: center;" alt="Link to CSS validator">
+			</a>
+		</div>
+	</footer>
 </body>
-<style>.mySlides {display:none;}</style>
 </html>
