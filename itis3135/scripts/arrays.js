@@ -1,5 +1,5 @@
 
-        let person = ["Person 1", "Person 2"];
+        let person = ["Goud Reddy", "Rajeswari Kasanur"];
         let salaries = [22000, 23000];
         
         function addSalary(){
